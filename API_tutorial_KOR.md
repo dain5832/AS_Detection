@@ -10,7 +10,7 @@ For English version, check out [README.md](/README.md)
 -공식 document link: https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/ \
 -tutorial link: https://github.com/tensorflow/models/tree/master/research/object_detection/
 
-## Basic Settings
+## System information
 - __OS Platform and Ditribution:__ Ubuntu 18.04 \
 - __CUDA:__ 10.1*  \
 - __CuDNN:__ 7.6.5* \
