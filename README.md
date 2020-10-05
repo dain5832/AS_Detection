@@ -1,8 +1,7 @@
-# TFOD_API
+# Tensorflow object detection API with custom dataset
 Tensorflow object detection on custom dataset
 
-# Tensorflow object detection API with custom dataset
-korean version: 
+For korean version, check out README_KOR.md
 
 This project was conducted based on the official document and tutorial from tensorflow. \
 official document link: https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/ \
