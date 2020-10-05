@@ -31,11 +31,11 @@ If you want to know more about how to use the tensorflow object detection API, c
 : random horizontal flip and random scale cropping was applied
 
 ## Results
-* training loss(Tensorboard)
+### Training Loss(Tensorboard)
 
 ![alt_text][tensorboard]
 
-* Classification Report & Confusion Matrix
+### Classification Report & Confusion Matrix
 
 ![alt text][confusion_matrix]
 
