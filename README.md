@@ -40,6 +40,6 @@ If you want to know more about how to use the tensorflow object detection API, c
 * COCO MAP score
 
 [tensorboard]: exported-models/my_model_200925/model_200925_tensorboard.png 
-[confusion_matrix]: exported-models/my_model_200925/Screenshot&#32from&#322020-09-29&#3217-07-49.png
+[confusion_matrix]: exported-models/my_model_200925/Screenshot&#32;from&#32;2020-09-29&#32;17-07-49.png
 
 ## Reference
