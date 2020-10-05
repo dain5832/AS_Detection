@@ -1,0 +1,5 @@
+!python ./preprocessing/build_ankylosing_records_tf2.py --csv_dir "/home/user/TensorFlow/workspace/training_AS/images/train/train.csv" --labels_path "/home/user/TensorFlow/workspace/training_AS/annotations/label_map.pbtxt" --output_path "/home/user/TensorFlow/workspace/training_AS/annotations/train.record" --image_dir "/home/user/TensorFlow/workspace/training_AS/images/train/"
+    !python ./preprocessing/build_ankylosing_records_tf2.py --csv_dir "/home/user/TensorFlow/workspace/training_AS/images/test/test.csv" --labels_path "/home/user/TensorFlow/workspace/training_AS/annotations/label_map.pbtxt" --output_path "/home/user/TensorFlow/workspace/training_AS/annotations/test.record" --image_dir "/home/user/TensorFlow/workspace/training_AS/images/test/"
+  
+
+
