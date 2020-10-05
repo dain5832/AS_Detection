@@ -6,7 +6,7 @@ If you want to know more about how to use the tensorflow object detection API, c
 ## Introduction
 * Ankylosing Spondylitis(AS)
 
-* Sacroiliac join(SIJ)
+* Sacroiliac joint(SIJ)
 
 ## Dataset
 * n X-ray images(n normal, m positive)
