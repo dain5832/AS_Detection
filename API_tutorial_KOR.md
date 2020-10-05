@@ -12,10 +12,10 @@ For English version, check out [README.md](/README.md)
 
 ## Basic Settings
 ```
-Environment: Ubuntu 18.04
-CUDA:10.1*
-CuDNN:7.6.5* 
-tensorflow version: 1.14(api가 tf1만을 지원하던 시절) -> 2.2 -> 2.3
+__Environment:__ Ubuntu 18.04
+__CUDA:__ 10.1*
+__CuDNN:__ 7.6.5* 
+__Tensorflow Version:__ 1.14(api가 tf1만을 지원하던 시절) -> 2.2 -> 2.3
 (마지막에 2.3으로 upgrade하였는데, 2.2를 사용하셔도 무방합니다.)
 ```
 *CUDA version과 CuDNN version은 공식 document에서 제안하는 version을 설치하였습니다.
