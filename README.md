@@ -32,9 +32,11 @@ If you want to know more about how to use the tensorflow object detection API, c
 
 ## Results
 * training loss(Tensorboard)
+
 ![alt_text][tensorboard]
 
 * Classification Report & Confusion Matrix
+
 ![alt text][confusion_matrix]
 
 * COCO MAP score
