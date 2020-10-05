@@ -3,8 +3,9 @@ Object detection on custom dataset using TFOD API
 
 For English version, check out [README.md](/README.md)
 
-이 프로젝트는 tensorflow object detection api의 공식 documentation과 tutorial을 활용하여 진행되었습니다. \
-저 역시 초보자로써 많은 시행착오를 겪었던만큼, 초보자 분들의 눈높이에 맞추어 작성하려고 노력하였습니다.
+이 프로젝트는 tensorflow object detection api의 공식 documentation과 tutorial을 활용하여 진행되었습니다. 
+
+저 역시 초보자로써 많은 시행착오를 겪었던만큼, 초보자 분들의 눈높이에 맞추어 작성하려고 노력하였습니다!:relaxed:
 
 -공식 document link: https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/ \
 -tutorial link: https://github.com/tensorflow/models/tree/master/research/object_detection/
@@ -31,14 +32,21 @@ API documentation에 나온 것을 그대로 따라하였고, anaconda 가상환
 각 과정에 대한 보다 자세한 설명은 공식 [documentation](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html)을 참고하여 주세요.
 
 ### 1) workspace 구축
+'''
 
-### 2) Data
+'''
+
+### 2) Dataset 준비
 X-ray영상 n장
 class는 normal과 positive 2개였고, 각각 장과 장이었습니다.
 
-### 3)
-### 4)
-### 5)
+### 3) Configure
+[링크](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)에서 원하는 모델을 다운로드합니다.
+
+### 4) Training
+- tensorboard check하기
+- 
+### 5) Evaluation
 
 
 ## Performance
