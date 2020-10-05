@@ -26,19 +26,19 @@ CuDNN: ??
 API documentation에 나온 것을 그대로 따라하였고, anaconda 가상환경을 만들어 설치하였습니다. \
 설치 과정 중에는 별다른 에러를 경험하지 못했습니다.
 
-# Process
+## Process
 Detailed steps for each process can be found in official documentation.
 
 
-## 1) workspace 구축
+### 1) workspace 구축
 
-## 2) Data
+### 2) Data
 X-ray영상 n장
 class는 normal과 positive 2개였고, 각각 장과 장이었습니다.
 
-## 3)
-## 4)
-## 5)
+### 3)
+### 4)
+### 5)
 
 
 ## Performance
