@@ -21,10 +21,6 @@ For English version, check out [README.md](/README.md)
 
 *CUDA version과 CuDNN version은 공식 document에서 제안하는 version을 설치하였습니다.
 
-*CUDA와 CuDNN version확인법 \
-CUDA: terminal에서 nvcc --version 타입 후 엔터 \
-CuDNN: ??
-
 ## Installation
 API documentation에 나온 것을 그대로 따라하였고, anaconda 가상환경을 만들어 설치하였습니다. \
 
@@ -33,8 +29,8 @@ API documentation에 나온 것을 그대로 따라하였고, anaconda 가상환
 ## Process
 각 과정에 대한 보다 자세한 설명은 공식 [documentation](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html)을 참고하여주세요.
 
-만약 anaconda의 가상환경에서 진행할 경우, 시작 전에 \
-`conda activate tensorflow(또는 가상환경이름)` 로 가상환경을 불러와야합니다.
+만약 anaconda의 가상환경에서 진행할 경우, \
+시작 전에 `conda activate tensorflow(또는 가상환경이름)` 로  반드시! 가상환경을 불러와야합니다.
 
 ### 1) workspace 구축
 
@@ -65,7 +61,6 @@ API documentation에 나온 것을 그대로 따라하였고, anaconda 가상환
 
 ### 4) Training
 1. model training하기
-
 
 2. tensorboard check하기
 
