@@ -10,7 +10,7 @@ If you want to know more about how to use the tensorflow object detection API, c
 
 ## Dataset
 * n X-ray images(n normal, m positive)
-* train: , test: , stratified(proportion of two classes was maintained).
+* train: , test: , stratified(proportion of two classes was maintained), random_state=42.
 
 ## Method
 * Preprocessing \
