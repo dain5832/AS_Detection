@@ -23,9 +23,10 @@ training이 완료된 model을 export하면 `.pb` 형식으로 저장이 됩니�
 `.pb` 파일을 불러와 evaluation을 할 수 있도록 하는 코드입니다. 
 * 각 이미지에 대한 결과와 함께, classification report와 classification matrix를 볼 수 있습니다.
 
-## inference_using_saved_models.ipynb
+## ~~inference_using_saved_models.ipynb
 for loop를 통해 `saved_models` 폴더에 있는 여러 모델(.pb 파일)을 불러와 evaluation을 하는 코드입니다. \
-(위의 `inference_using_saved_model.ipynb` 를 반복한다고 생각하시면 됩니다.)
+(위의 `inference_using_saved_model.ipynb` 를 반복한다고 생각하시면 됩니다.)~~
+각 model의 test_set이 다르다는 점을 고려해 다시 짜야함.
 
 ## repeat_whole_training_process
 train_test_split의 random_state를 달리하여 training의 처음부터 끝까지를 여러번 반복하는 코드입니다. 
