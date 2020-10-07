@@ -10,8 +10,8 @@ If you want to know more about how to use the tensorflow object detection API, c
 
 ## Dataset
 * 946 X-ray images(normal: 468, positive: 478)
-* train: 756, test: 190(최종 124장), stratified(proportion of two classes was maintained), random_state=42.
-** test 과정에서 shape error로 66장 누락됨.(total 124, normal ?? positive??)
+* train: 756, test: 190(최종 115장), stratified(proportion of two classes was maintained), random_state=42.
+** test 과정에서 shape error로 75장 누락됨.(total 115, normal ?? positive??)
 
 ## Method
 * Preprocessing \
