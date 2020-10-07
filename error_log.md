@@ -1,3 +1,4 @@
+```
 /home/user/TensorFlow/workspace/training_AS/images/test/10638946_2621_0.jpg
 /home/user/TensorFlow/workspace/training_AS/images/test/10638946_2621_0.jpg
 2 root error(s) found.
@@ -11,3 +12,4 @@
 
 Function call stack:
 signature_wrapper -> signature_wrapper
+```
