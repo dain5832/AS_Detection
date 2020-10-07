@@ -1,15 +1,14 @@
-# 
-
+# Scripts Description
 이 문서는 scripts 폴더 내의 각 파일에 대한 정보를 담고 있습니다.
 
 ## train_test_split.ipynb
-training 전, 전체 이미지를 train_set과 test_set으로 나누는 작업을 진행하는 코드입니다.
-과정은 train/test나누기 -> train/test 폴더를 만들어 이미지 복사 -> annotation 정보를 담은 train.csv와 test.csv 생성 으로 구성되어 있습니다.
+training 전, 전체 이미지를 train_set과 test_set으로 나누는 작업을 진행하는 코드입니다. \
+* 과정
+train/test나누기 -> train/test 폴더에 이미지 복사 -> annotation 정보를 담은 train.csv와 test.csv 생성 으로 구성되어 있습니다.
+* documentation에서는 annotation 정보가 이미지 1장당 xml파일로 존재한다는 가정하에 코드를 제공하고 있는데, 저의 경우 전체 annotation 정보가 하나의 csv 파일에 들어있어 그에 맞는 코드를 따로 만들었습니다.
 
 ## create_test_train_csv.ipynb
-이미지를 각각 `train` 과 `test`폴더로 이동시킨 뒤, 각각 train과 test 이미지에 대한 annotation정보를 담은 csv 파일을 생성하는 코드입니다. \
-해당 csv 파일이 있어야 이후 tf_record를 만들 수 있습니다. \
-documentation에 나와있는 코드는 이미지 1장당 xml파일이 존재한다는 가정하에 짜여진 것이라 따로 코드를 만들었습니다. 
+`train_test_split.ipynb` 코드 중 annotation 정보를 담은 csv 파일을 생성하는 과정만을 담은 코드입니다. \
 
 ## inference_using_checkpoints.ipynb
 api에서 training을 할 때 일정 step마다 checkpoint file을 생성합니다.(default 값은 1000입니다.) \
