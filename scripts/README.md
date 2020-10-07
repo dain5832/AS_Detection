@@ -25,7 +25,7 @@ training이 완료된 model을 export하면 `.pb` 형식으로 저장이 됩니�
 
 ## inference_using_saved_models.ipynb
 ~~for loop를 통해 `saved_models` 폴더에 있는 여러 모델(.pb 파일)을 불러와 evaluation을 하는 코드입니다. \
-(위의 `inference_using_saved_model.ipynb` 를 반복한다고 생각하시면 됩니다.)~~
+(위의 `inference_using_saved_model.ipynb` 를 반복한다고 생각하시면 됩니다.)~~ \
 각 model의 test_set이 다르다는 점을 고려해 다시 짜야함. (test.csv를 불러오기)
 
 ## repeat_whole_training_process
