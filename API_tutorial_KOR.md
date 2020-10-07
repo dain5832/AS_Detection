@@ -67,12 +67,17 @@ API documentation에 나온 것을 그대로 따라하였고, anaconda 가상환
 3. training이 완료된 모델 export하기 
 
 ### 5) Evaluation
--> evaluation의 경우 documentation에서 나와있는 것처럼 terminal에서 시행하지 않고, jupyter notebook tutorial을 조금 변형하여 작업하였습니다. \
-terminal에서 돌릴 경우 box에 대한 metric(ex. COCO MAP score)만 볼 수 있는데, 저희 프로젝트의 경우에는 각 이미지의 classification 결과가 필요했기 때문이었습니다.
+-> evaluation은 documentation에서 나와있는 방식이 아닌, jupyter notebook tutorial을 조금 변형하여 작업하였습니다. \
+API 측에서 terminal에서 돌릴 경우 box에 대한 metric(ex. COCO MAP score)만 볼 수 있도록 지원하고 있는데, 저희 프로젝트의 경우에는 각 이미지의 classification 결과가 필요했기 때문이었습니다.
 
-따라서 앞서 export한 training이 완료된 model파일(.pb)을 가지고 evaluation을 진행하였습니다.
+따라서 앞서 export한 traning후의 model파일(.pb)을 이용해 evaluation을 진행하였습니다.
 
-이에 대한 코드는 에서 확인하실 수 있습니다.
+이에 대한 코드는 `scripts/` 에서 확인하실 수 있습니다.
+
+* 유의사항
+앞서 anaconda 가상환경에 api를 설치하였기 때문에, evaluation을 할 때도 `conda activate tensorflow(또는 가상환경이름)`를 해주어야합니다. \
+그런데 저의 경우 가상환경을 불러왔음에도 `anaconda-navigator` 를 통해 .pynb파일을 열면 api를 import하지 못하더군요. \
+그래서 tenminal에서 `cd TensorFlow` 를 해준 뒤, `jupyter notebook` 커맨드를 통해 쥬피터 노트북에 들어가 파일을 실행하는 방식을 사용하였습니다. 
 
 ## Performance
 
