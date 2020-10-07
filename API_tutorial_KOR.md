@@ -14,8 +14,8 @@ For English version, check out [README.md](/README.md)
 - __OS Platform and Ditribution:__ Ubuntu 18.04 
 - __CUDA:__ 10.1*  
 - __CuDNN:__ 7.6.5* 
-- __Tensorflow Version:__ 1.14(api가 tf1만을 지원하던 시절) -> 2.2 -> 2.3 
-  (마지막에 2.3으로 upgrade하였는데, 2.2를 사용하셔도 무방합니다.) \
+- __Tensorflow Version:__ 1.14(api가 tf1만을 지원하던 시절) -> 2.2 -> 2.3 \
+  (마지막에 2.3으로 upgrade하였는데, 2.2를 사용하셔도 무방합니다.) 
 - __Python Version:__ 3.8? 
 - __GPU model:__ Titan RTX ?GB
 
@@ -59,16 +59,17 @@ training_demo/
 
 
 ### 2) Dataset 준비
-0. 정답 박스 그리기(annotation 작업) 
+0. 정답 박스 그리기(annotation 작업) \
 -> 저는 ImageJ라는 tool을 사용하였고, 모든 annotation의 정보를 하나의 `csv`파일에 모았습니다. \
 Documentation의 경우 이미지 한 장당 하나의 `xml`파일을 만들어 저장하고 있습니다.
 
-1. train set과 test set으로 분류
+1. train set과 test set으로 분류\
 -> 저는 `scripts/train_test_split`와 같이 구현하였습니다. \
 여기서는 1) train과 test set을 나누어, 2) 해당되는 이미지를 train폴더와 test폴더에 담고, 3) annotation정보도 train과 test에 맞게 따로 생성해주는 작업을 해야합니다.
 
-2. label_map.txt 파일 생성
+2. label_map.txt 파일 생성\
 각 label을 다음과 같은 형식으로 적어 `.pbtxt`로 저장합니다.
+
 * 예시
 ```
 item {
@@ -82,7 +83,7 @@ item {
 }
 ```
 
-2. tfrecord 파일 생성 
+2. tfrecord 파일 생성 \
 -> 저는 `scripts/preprocessing/build_ankylosing_records_tf2.py`와 같이 구현하였습니다. \
 터미널 실행코드는 아래와 같습니다.
 ```
@@ -92,14 +93,14 @@ python ./preprocessing/build_ankylosing_records_tf2.py --csv_dir [PATH_TO_MODEL_
 ### 3) Configure
 1. Pre-Trained Model 다운받기 \
 
-[링크](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)에서 원하는 모델을 다운로드하신 뒤, 압축해제후 `pre-trained-models`폴더에 저장하시면 됩니다.
+[링크](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)에서 원하는 모델을 다운로드하신 뒤, 압축해제 후 `pre-trained-models`폴더에 저장하시면 됩니다. \
 -> 저는 EfficientDet-d4를 사용하였습니다. \
 (EfficientDet-d6에서 OOM이 발생하여 d4로 낮추었는데 결과가 괜찮아 d5는 시도해보지 않았습니다.)
 
-2. `pipeline.config` 파일 변형.
-`pre-trained-models/모델명`에 있는 pipeline.config파일을 `models/모델명`으로 복사합니다.
-이 파일 내에 preprocessing부터 hyperparameter와 그 외 각종 정보들이 들어있는데요,
-이 값을 입맛에 맞게 바꾸시면 됩니다.(기본 수정사항은 documentation에 나와있습니다.)
+2. `pipeline.config` 파일 변형. \
+`pre-trained-models/모델명`에 있는 pipeline.config파일을 `models/모델명`으로 복사합니다. \
+이 파일 내에 preprocessing부터 hyperparameter와 그 외 각종 정보들이 들어있는데요, \
+이 값을 입맛에 맞게 바꾸시면 됩니다.(기본 수정사항은 documentation에 나와있습니다.) \
 -> 제가 training에 사용한 config파일은 [여기](/models/efficientdet_d4_coco17_tpu-32/pipeline.config)에서 확안하실 수 있습니다
 
 ### 4) Training
