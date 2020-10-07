@@ -103,14 +103,14 @@ python ./preprocessing/build_ankylosing_records_tf2.py --csv_dir [PATH_TO_MODEL_
 -> 제가 training에 사용한 config파일은 [여기](/models/efficientdet_d4_coco17_tpu-32/pipeline.config)에서 확안하실 수 있습니다
 
 ### 4) Training
-1. model training하기
-`model_main_tf2.py`를 이용해 모델을 train합니다.
+1. model training하기 \
+`model_main_tf2.py`를 이용해 모델을 train합니다. \
 터미널에는 model경로(`--model_dir`)와 `pipeline.config`파일(`--pipeline_config_path`)의 경로를 넣습니다.
 
-2. tensorboard check하기
+2. tensorboard check하기 \
 tensorboard에서 training loss를 확인합니다.
 
-3. training이 완료된 모델 export하기 
+3. training이 완료된 모델 export하기 \
 `exporter_main_v2.py`를 이용해 training이 끝난 모델을 `.pb`파일로 저장합니다.
 
 ### 5) Evaluation
