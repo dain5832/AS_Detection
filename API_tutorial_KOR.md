@@ -1,7 +1,7 @@
 # Tensorflow object detection API with custom dataset
 Object detection on custom dataset using TFOD API
 
-For English version, check out [README.md](/README.md)
+For English version, check out [API_tutorial.md](/API_tutorial.md)
 
 이 프로젝트는 tensorflow object detection api의 공식 documentation과 tutorial을 활용하여 진행되었습니다. 
 
