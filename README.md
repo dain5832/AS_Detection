@@ -31,7 +31,7 @@ If you want to know more about how to use the tensorflow object detection API, c
 : random horizontal flip and random scale cropping was applied
 
 ## Results
-### Training Loss(Tensorboard)
+### Training Loss(Tensorboard, from step 15000 to 20000)
 
 ![alt_text][tensorboard]
 
@@ -52,7 +52,7 @@ If you want to know more about how to use the tensorflow object detection API, c
 ![alt text][half]
 
 
-[tensorboard]: exported-models/my_model_200925/model_200925_tensorboarddd.png 
+[tensorboard]: exported-models/my_model_201014/tensorboard.png 
 [confusion_matrix]: exported-models/my_model_201014/confusion_matrix.png
 [negative]: exported-models/my_model_201014/negative.png
 [positive]: exported-models/my_model_201014/positive.png
