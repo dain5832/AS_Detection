@@ -10,7 +10,7 @@ If you want to know more about how to use the tensorflow object detection API, c
 
 ## Dataset
 * 946 X-ray images(normal: 468, positive: 478)
-* train: 756, test: 190(최종 115장), stratified(proportion of two classes was maintained), random_state=42.
+* train: 756, test: 190(최종 115장), stratified(proportions of two classes were maintained), random_state=42.
 ** test 과정에서 shape error로 75장 누락됨.(total 115, normal ?? positive??)
 
 ## Method
@@ -52,7 +52,7 @@ If you want to know more about how to use the tensorflow object detection API, c
 ![alt text][half]
 
 
-[tensorboard]: exported-models/my_model_200925/model_200925_tensorboard.png 
+[tensorboard]: exported-models/my_model_200925/model_200925_tensorboarddd.png 
 [confusion_matrix]: exported-models/my_model_201014/confusion_matrix.png
 [negative]: exported-models/my_model_201014/negative.png
 [positive]: exported-models/my_model_201014/positive.png
