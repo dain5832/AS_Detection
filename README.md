@@ -42,8 +42,20 @@ If you want to know more about how to use the tensorflow object detection API, c
 ### COCO MAP score
 
 ### Example
+- Negative
+![alt text][negative]
+
+-Positive
+![alt text][positive]
+
+-Half
+![alt text][half]
+
 
 [tensorboard]: exported-models/my_model_200925/model_200925_tensorboard.png 
-[confusion_matrix]: exported-models/my_model_200925/Screenshot&#32;from&#32;2020-10-07&#32;17-22-25.png
+[confusion_matrix]: exported-models/my_model_201014/confusion_matrix.png
+[negative]: exported-models/my_model_201014/negative.png
+[positive]: exported-models/my_model_201014/positive.png
+[half]: exported-models/my_model_201014/index.png
 
 ## Reference
