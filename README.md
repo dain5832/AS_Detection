@@ -10,8 +10,7 @@ If you want to know more about how to use the tensorflow object detection API, c
 
 ## Dataset
 * 946 X-ray images(normal: 468, positive: 478)
-* train: 756, test: 190(최종 115장), stratified(proportions of two classes were maintained), random_state=42.
-** test 과정에서 shape error로 75장 누락됨.(total 115, normal ?? positive??)
+* train: 756, test: 190 stratified(proportions of two classes were maintained), random_state=42.
 
 ## Method
 * Preprocessing \
@@ -22,13 +21,14 @@ If you want to know more about how to use the tensorflow object detection API, c
 
 * Hyperparameter (for detailed info, check out [pipeline.config](models/efficientdet_d4_coco17_tpu-32/pipeline.config)) \
 -batch size: 4 \
+-optimizer: Adam \
 -learning_rate_base: 0.003999999821186066 \
 -warmup_learning_rate: 0.000010000000474974513 \
 -warmup_steps: 2500 \
--total_steps: 20000
+-total_steps: 70000
 
 * Augmentation \
-: random horizontal flip and random scale cropping was applied
+: random horizontal flip, random scale cropping, random brightness adjustment, random contrast adjustment.
 
 ## Results
 ### Training Loss(Tensorboard, from step 15000 to 20000)
