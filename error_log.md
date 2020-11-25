@@ -66,7 +66,7 @@ dicom파일을 읽어와 numpy 또는 bytes로 변환하도록 하여도 같은 
 ### tensorboard 불러오는 도중 생긴 문제
 ```No such file or directory: 'home/user/anaconda3/envs/tensorflow/lib/python3.8/site-packages/numpy-1.19.1.dist-info/METADATA'```
 -> 해당 폴더 (`numpy-1.19.1.dist-info`)를 삭제. \
-(만약 `site-packages`안에 `numpy`라는 이름 폴더가 따로 존재하지 않는다면 `conda`나 `pip`을 이용해서 새로 설치해주어야한다.)
+(만약 삭제 후 `site-packages`안에 `numpy`라는 이름 폴더가 따로 존재하지 않는다면 `conda`나 `pip`을 이용해서 새로 설치해주어야한다.)
 
 
 
@@ -87,7 +87,7 @@ dicom파일을 읽어와 numpy 또는 bytes로 변환하도록 하여도 같은 
 Function call stack:
 signature_wrapper -> signature_wrapper
 ```
--> 해결하지 못함.
+-> shape이 맞지 않아 생기는 오류인 것 같은데 정확한 원인은 파악하지 못함. 이미지를 수동으로 resize해준 뒤에 넣어 해결.
 
 
 
