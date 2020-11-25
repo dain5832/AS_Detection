@@ -53,9 +53,9 @@ If you want to know more about how to use the tensorflow object detection API, c
 ![alt text][half]
 
 
-[tensorboard]: exported-models/my_model_201014/tensorboard.png 
-[confusion_matrix]: exported-models/my_model_201014/confusion_matrix.png
-[coco_map]: exported-models/my_model_201014/cocomap.png
+[tensorboard]: exported-models/my_model_2011116/train_loss.png 
+[confusion_matrix]: exported-models/my_model_2011116/confusion_matrix.png
+[coco_map]: exported-models/my_model_201116/DetectionBoxes_Precision.png
 [negative]: exported-models/my_model_201014/negative.png
 [positive]: exported-models/my_model_201014/positive.png
 [half]: exported-models/my_model_201014/index.png
